@@ -50,6 +50,6 @@ app.use((err, req, res, next) => {
   });
 });
 // ==========***********Port setup************===============
-app.listen(9000, () => {
+app.listen(process.env.PORT || 9000, () => {
   console.log("9000 port ready to start.");
 });
