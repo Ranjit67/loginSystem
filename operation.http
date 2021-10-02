@@ -1,0 +1,4 @@
+#### register check
+PUT http://localhost:9000/operation/profileUpdate
+Content-Type: application/json
+Authorization:Barear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiWW91ciB0cnVzdC4iLCJpc3MiOiJSYWouY29tIiwiaWF0IjoxNjMzMTQ0NjYwLCJhdWQiOiI2MTU3Y2UwYzllZGFjZWYyYjY5ZjViZDUifQ.BkXOOUay_jtbOgzJWuK8aXg7OunWmgef2epEy1zhqko
