@@ -25,5 +25,15 @@ router.put("/profileUpdate", verifyToken, async (req, res, next) => {
     next(error);
   }
 });
-
+router.delete("/deleteUser", verifyToken, async (req, res, next) => {
+  try {
+    const { aud } = req.payload;
+    const deleteUser = await User.findByIdAndDelete(aud);
+    if (deleteUser)
+      throw createError.InternalServerError("Something want wrong.");
+    res.json({ data: "User delete successfully." });
+  } catch (error) {
+    next(error);
+  }
+});
 module.exports = router;
